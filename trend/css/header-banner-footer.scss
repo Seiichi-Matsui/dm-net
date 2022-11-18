@@ -1,0 +1,310 @@
+// header
+
+
+.header__bottom {
+    position: relative;
+}
+
+.notojp {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.header__navber {
+    .header__nav__pc {
+        border-bottom: 7px solid #fff;
+        max-width: 1000px;
+        display: flex;
+        background-color: #E6EDF0;
+        
+        li {
+            display: table;
+            border-right: 2px solid #FFF;
+            text-align: center;
+
+            &:nth-child(5) {
+                border-right: none;
+            }
+
+            a {
+                display: table-cell;            
+                vertical-align: middle;
+                line-height: 15px;
+            }
+        }
+    }
+
+    .nav {
+        width: 18.3%;
+        font-size: 90%;
+        border-bottom: 3px solid #D8E0E3;
+    }
+
+    .nav__top {
+        width: 26.7%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .header__nav__sp__container { 
+        background-color: #E6EDF0;
+        border-bottom: 3px solid #3A55CC;
+        width: 100vw;
+
+        .header__nav__sp {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+
+            li:nth-child(1) {
+                width: 65%;
+                margin: 3% 5% 1% 0;
+            }
+            li:nth-child(2) {
+                width: 23%;
+                margin: auto 7% 0 0;
+                position: relative;
+                cursor: pointer;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    background-image: url(../images/header-sidebar-footer/nav-arrow.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 27%;
+                    width: 18%;
+                    margin-left: 15%;
+                    bottom: 45%;
+                    transform: rotate(90deg);
+                }
+
+                img {
+                    width: 70%;
+                }
+                
+            }
+
+
+            li img {
+                vertical-align: inherit;
+            }
+        }
+    }
+}
+
+.fixed__sp {
+	left: 0;
+	position: fixed;
+	top: 0;
+    z-index: 9999;
+}
+.nav__float__sp {
+    position: absolute;
+    width: 100%;
+}
+
+.fixed__pc {
+	position: fixed;
+	top: 0;
+    z-index: 9999;
+    width: 1000px;
+    inset: 0;
+    margin: 0 auto;
+
+    .header__nav__pc {
+        border-bottom: none;
+    }
+}
+.nav__float__pc {
+    position: absolute;
+    width: 100%;
+}
+
+.nav__menu {
+    background-color: #E6EDF0!important;
+    padding: 10px 0 55px 0;
+    h3 {
+        height: 36px;
+        background-color: #9296AD;
+        font-size: 16px;
+        color: #FFF;
+        font-weight: 600;
+        padding: 0 25px;
+        line-height: 36px;
+    }
+    ul {
+        li {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            height: 45px;
+            padding: 0 25px;
+            font-size: 14px;
+            line-height: 16px;
+            border-bottom: 1px solid #C2D2D9;
+            &:last-child {
+                border-bottom: none;
+            }
+
+            a span {
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+// side banner
+
+.side-banner {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: auto;
+    justify-content: center;
+
+    ul {
+        height: 90%;
+        li {
+            max-width: 60px;
+            min-width: 30px;
+            max-height: 386px;
+            height: 48%;
+            width: auto;
+
+            &:nth-child(2) {
+                margin-top: 10px;
+            }
+            a {
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+        }
+
+    }
+
+}
+
+// footer
+.footer__banner {
+    margin-top: 3.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    li {
+        width: 35%;
+        margin: 0 2.5px;
+    }
+}
+
+.footer__li {
+    width: 83%;
+    margin: 5% auto 0;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        a:link {
+            color: #707070;
+        }
+
+        &:nth-child(1) a {
+            color: #294762;
+            font-weight: 600;
+        }
+    }
+}
+
+.footer__bottom {
+    margin: 2% auto 5%;
+    text-align: center;
+    position: relative;
+    color: #707070;
+
+    a:link {
+        color: #707070;
+        border-bottom: 1px solid #707070;
+    }
+
+    &:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -40px;
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            background-color: #707070;
+    }
+}
+
+.copyright {
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    color: #707070;
+    a:link {
+        color: #707070;
+    }
+}
+
+#footer {
+    padding: 8px 0 0;
+    margin: 0;
+}
+.footer__banner__sp {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+     li {
+        width: 49.5%;
+     }
+}
+.footer__li__sp__top li a{
+    color: #294762;
+    font-weight: 900;
+}
+.footer__li__sp {
+    display: flex;
+    justify-content: space-around;
+    margin: auto 20px;
+
+    li {
+        border-bottom: none!important;
+        margin-top: 10px;
+        a {
+            color: #707070;
+        }
+    }
+}
+.footer__bottom__sp {
+    margin: 10px auto 0;
+    padding-bottom: 10px;
+    font-size: 11px;
+    letter-spacing: -1px;
+    text-align: center;
+    color: #707070;
+    border-bottom: 1px solid #294762;
+    a:link {
+        color: #707070;
+        border-bottom: 1px solid #707070;
+    }
+}
+.copyright__sp {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sidebar__left__close {
+    background: none!important;
+    color: #333!important;
+    cursor: pointer;
+}

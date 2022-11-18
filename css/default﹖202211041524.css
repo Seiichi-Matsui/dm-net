@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+/* @import "../js/flexslider/css/flexslider.css"; */
+@import "../share/css/top_common.css";
+@import "../share/css/top_resp.css";
+@import "../share/css/top_sp_reset.css" screen and (max-width:890px);
+@import "../share/css/top_sp_resp.css" screen and (max-width:890px);
+@import "../js/js/pagination.css" screen and (max-width:890px);
+
+#main .tobira_h2 {
+margin: 0 0 20px 0;
+padding: 0 0.5em;
+background: #00BCFF;
+border-radius: 5px;
+color: #fff;
+font-size: 18px;
+line-height: 2.0;
+}
+
+#main .tobira_h2 a{
+color: #fff;
+text-decoration: none;
+font-size: 18px;
+}
+
+@media screen and (max-width:890px){
+/*画面幅が890px以下の時*/
+.pc_flg{
+display:none;
+}
+
+#main h1 {
+text-shadow: none;
+}
+
+#main .tobira_h2 {
+text-shadow: none;
+}
+}
+
+@media screen and (min-width:890px){
+/*画面幅が890px以上の時*/
+.sp_flg{
+display:none;
+}
+}
+
+/*▼ 糖尿病の合併症・併発症・関連疾患 ▼*/
+
+#thumbnail a:link {
+color: #0060B6;
+}
+
+#container_gappei .clearfix {
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+#container_gappei .column {
+position: relative;
+padding: 20px;
+background: #F7F6EB;
+margin: 2em 0;
+}
+
+#container_gappei p {
+font-size: 16px;
+}
+
+#container_gappei .container_gappei_topbox {
+flex-wrap: nowrap;
+}
+
+#container_gappei .container_gappei_topbox img{
+width: 500px;
+}
+
+#container_gappei .thumbnail img {
+width: 200px;
+}
+
+#container_gappei .thumbnail a {
+display: flex;
+flex-direction: column;
+margin: 1em;
+max-width: 200px;
+align-items: center;
+}
+
+#container_gappei .thumbnail_title {
+font-size: 16px;
+font-weight: bold;
+}
+
+#container_gappei .shikan-main-l_flex {
+display: flex;
+justify-content: center;
+}
+
+#container_gappei .yakudachi_inbox {
+display: flex;
+border-bottom: 1px dashed #ffc09b;
+margin: 0 1em;
+padding: 1em;
+}
+
+#container_gappei .yakudachi_inbox img {
+width: 100px;
+height: max-content;
+margin: 0 10px;
+}
+
+#container_gappei .yakudachi_inbox a {
+font-size: 15px;
+}
+
+#container_gappei .yakudachi_inbox h5 {
+font-size: 16px;
+color: #003081;
+text-align: start;
+}
+
+#container_gappei .shikan-main-l,#container_gappei .shikan-main-r  {
+width: 700px;
+}
+
+@media screen and (max-width:890px){
+/*画面幅が890px以下の時*/
+#main h5 {
+background: #fff;
+}
+
+#container_gappei .container_gappei_topbox {
+display: block;
+}
+
+#container_gappei .container_gappei_topbox img{
+width: 200px;
+display: block;
+margin: auto;
+}
+
+#container_gappei .shikan-main-l_flex {
+display: block;
+}
+
+#container_gappei .shikan-main-l,#container_gappei .shikan-main-r  {
+width: auto;
+}
+
+#container_gappei .yakudachi_inbox {
+display: block;
+}
+
+#container_gappei .yakudachi_inbox img {
+display: block;
+margin: auto;
+}
+
+ins {
+background-color: #ffffff;
+}
+
+.ad_area_foot {
+border-bottom: 0;
+border-top: 0;
+}
+
+aside {
+background-color: #ffffff;
+}
+}
+
+/*▲ 糖尿病の合併症・併発症・関連疾患 ▲*/
+
+
+/*▼ 特集／コラム ▼*/
+
+.mini_inbox {
+display: flex;
+align-items: center;
+width: 475px;
+margin: 0 1em;
+padding: 10px;
+border-bottom: 1px dotted #a9a9a9;
+}
+
+.tokushu_inbox {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-bottom: 2em;
+}
+
+#container_tokushu .mini_inbox img {
+height: max-content;
+max-width: 100px;
+padding: 0 10px;
+}
+
+#container_tokushu h5 {
+font-size: 16px;
+text-align: start;
+}
+
+#container_tokushu h5 a {
+color: #003081;
+}
+
+#learn a,#tokushu a {
+font-size: 15px;
+}
+
+.author {
+font-size: 13px;
+}
+
+@media screen and (max-width:890px){
+
+.tokushu_inbox {
+justify-content: center;
+}
+
+.mini_inbox {
+width: 100%;
+}
+}
+
+/*▲ 特集／コラム ▲*/
