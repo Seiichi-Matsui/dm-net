@@ -7,6 +7,7 @@ window.addEventListener('scroll', () => {
     const navheight = document.getElementById('global-nav').clientHeight
     const scroll = window.scrollY;
     const width = window.innerWidth
+
     if(width < 735) {
         nav.classList.remove('nav__float__pc')
         nav.classList.remove('fixed__pc')

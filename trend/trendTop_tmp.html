@@ -39,7 +39,7 @@
 
   <!-- ヘッダー　サイドバー　フッター　作り直す際追加　202211 -->
   <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
-  <link rel="stylesheet" href="./css/header-banner-footer.css">
+  <link rel="stylesheet" href="./css/top-article.css">
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -125,9 +125,9 @@
               <ul class="header__nav__pc">
                 <li class="nav__top"><a href="#"><img src="./images/header-sidebar-footer/nav-1.png"
                       alt="血糖トレンドの情報ファイル TOP"></a></li>
-                <li class="nav notojp"><a href="#">血糖トレンドとは</a></li>
-                <li class="nav notojp"><a href="#">血糖トレンドを<br>治療に生かす</a></li>
-                <li class="nav notojp"><a href="#">血糖トレンドを<br>知る方法</a></li>
+                <li class="nav notojp"><a href="#summary">血糖トレンドとは</a></li>
+                <li class="nav notojp"><a href="#lead">血糖トレンドを<br>治療に生かす</a></li>
+                <li class="nav notojp"><a href="#detail">血糖トレンドを<br>知る方法</a></li>
                 <li class="nav notojp"><a href="#">測定機器を知る</a></li>
               </ul>
             </div>
@@ -171,7 +171,7 @@
           <!-- ▼ description ▼ -->
           <section class="description">
             <div class="sp-none">
-              <div class="description__container__pc">
+              <div class="trend__description__container__pc">
                 <div class="description__top">
                   <img src="./images/top/description-1-pc.png" alt="血糖トレンド（変動）を知る意味">
                   <div class="description__top__right notojp">
@@ -187,11 +187,13 @@
                   </div>
                 </div>
                 <ul class="description__bottom">
-                  <li><h2><a href="#"><img src="./images/top/description-2-pc.png" alt="血糖トレンドとは"></a></h2></li>
-                  <li><h2><a href="#"><img src="./images/top/description-3-pc.png" alt="血糖トレンドを治療に生かす"></a></h2></li>
-                  <li><h2><a href="#"><img src="./images/top/description-4-pc.png" alt="血糖トレンドを知る方法　SMBG、CGM、FGM"></a></h2></li>
+                  <li><h2><a class="hover" href="#summary"><img src="./images/top/description-2-pc.png" alt="血糖トレンドとは"></a></h2></li>
+                  <li><h2><a class="hover" href="#lead"><img src="./images/top/description-3-pc.png" alt="血糖トレンドを治療に生かす"></a></h2></li>
+                  <li><h2><a class="hover" href="#detail"><img src="./images/top/description-4-pc.png" alt="血糖トレンドを知る方法　SMBG、CGM、FGM"></a></h2></li>
                 </ul>
-                <p class="description__supplement">＞糖尿病3分間ラーニング《血糖トレンド編》</p>
+                <a href="/trend/3min/">
+                  <p class="description__supplement">＞糖尿病3分間ラーニング《血糖トレンド編》</p>
+                </a>
               </div>
             </div>
             <div class="pc-none">
@@ -209,9 +211,9 @@
                   </p>
                 </div>
                 <ul class="description__bottom__sp">
-                  <li><a href="#"><img src="./images/top/description-2-sp.png" alt="血糖トレンドとは"></a></li>
-                  <li><a href="#"><img src="./images/top/description-3-sp.png" alt="血糖トレンドを治療に生かす"></a></li>
-                  <li><a href="#"><img src="./images/top/description-4-sp.png" alt="血糖トレンドを知る方法　SMBG、CGM、FGM"></a></li>
+                  <li><a class="hover" href="#summary"><img src="./images/top/description-2-sp.png" alt="血糖トレンドとは"></a></li>
+                  <li><a class="hover" href="#lead"><img src="./images/top/description-3-sp.png" alt="血糖トレンドを治療に生かす"></a></li>
+                  <li><a class="hover" href="#detail"><img src="./images/top/description-4-sp.png" alt="血糖トレンドを知る方法　SMBG、CGM、FGM"></a></li>
                 </ul>
                 <p class="description__supplement__sp">＞糖尿病3分間ラーニング《血糖トレンド編》</p>
               </div>
@@ -223,17 +225,17 @@
 
           <div class="sp-none">
             <ul class="middle__banner">
-              <li><a href="#" target="_blank"><img src="./images/header-sidebar-footer/footer-banner-1.png"
+              <li><a class="hover" href="#" target="_blank"><img src="./images/header-sidebar-footer/footer-banner-1.png"
                     alt="血糖トレンドを調べる機器の違いってなに？　測定機器を知る"></a></li>
-              <li><a href="https://medicalnote.jp/features/search/glucose_monitoring/hospitals" target="_blank"><img
+              <li><a class="hover" href="https://medicalnote.jp/features/search/glucose_monitoring/hospitals" target="_blank"><img
                     src="./images/header-sidebar-footer/footer-banner-2.png" alt="血糖測定が相談できる　医療機関を検索"></a></li>
             </ul>
           </div>
           <div class="pc-none">
             <ul class="middle__banner__sp">
-              <li><a href="#" target="_blank"><img src="./images/header-sidebar-footer/footer-banner-1-sp.png"
+              <li><a class="hover" href="#" target="_blank"><img src="./images/header-sidebar-footer/footer-banner-1-sp.png"
                     alt="血糖トレンドを調べる機器の違いってなに？　測定機器を知る"></a></li>
-              <li><a href="https://medicalnote.jp/features/search/glucose_monitoring/hospitals" target="_blank"><img
+              <li><a class="hover" href="https://medicalnote.jp/features/search/glucose_monitoring/hospitals" target="_blank"><img
                     src="./images/header-sidebar-footer/footer-banner-2-sp.png" alt="血糖測定が相談できる　医療機関を検索"></a></li>
             </ul>
           </div>
@@ -241,33 +243,33 @@
           <!-- ▲ banner ▲ -->
           
           <!-- ▼ contents ▼ -->
-          <section>
+          <section id="summary">
             <!-- ▼ summary ▼ -->
             <div class="sp-none">
               <div class="contents summary notojp">
                 <h2 class="contents__title">血糖トレンドとは</h2>
-                < class="contents__text">日々の血糖の変動について、その“傾向”を捉える「血糖トレンド」。ここでは、その基本的な考え方や知識について紹介いたします。</p>
+                <p class="contents__text">日々の血糖の変動について、その“傾向”を捉える「血糖トレンド」。ここでは、その基本的な考え方や知識について紹介いたします。</p>
                 <ul class="summary__container">
                   <li>
-                    <a href="#">
+                    <a class="hover" href="/trend/oshiete/001.php">
                       <img src="./images/top/summary-1-pc.png" alt="血糖トレンド基礎知識">
                       <p>血糖トレンド基礎知識</p>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a class="hover" href="/trend/knowing/001.php">
                       <img src="./images/top/summary-2-pc.png" alt="血糖トレンドを知るには">
                       <p>血糖トレンドを知るには</p>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a class="hover" href="/trend/agp/001.php">
                       <img src="./images/top/summary-3-pc.png" alt="血糖トレンドの”読み方”:AGP">
                       <p>血糖トレンドの<br>”読み方”:AGP</p>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a class="hover" href="/trend/quiz/001.php">
                       <img src="./images/top/summary-4-pc.png" alt="グラフで見る血糖トレンドクイズ">
                       <p>グラフで見る<br>血糖トレンドクイズ</p>
                     </a>
@@ -281,28 +283,29 @@
                 <p class="contents__text__sp">
                   日々の血糖の変動について、その“傾向”を捉える<br>
                   「血糖トレンド」。ここでは、その基本的な考え<br>
-                  方や知識について紹介いたします。</p>
+                  方や知識について紹介いたします。
+                </p>
                 <ul class="summary__container__sp">
                   <li>
-                    <a href="#">
+                    <a class="hover" href="/trend/oshiete/001.php">
                       <img src="./images/top/summary-1-sp.png" alt="血糖トレンド基礎知識">
                       <p>血糖トレンド<br>基礎知識</p>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a class="hover" href="/trend/knowing/001.php">
                       <img src="./images/top/summary-2-sp.png" alt="血糖トレンドを知るには">
                       <p>血糖トレンドを<br>知るには</p>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a class="hover" href="/trend/agp/001.php">
                       <img src="./images/top/summary-3-sp.png" alt="血糖トレンドの”読み方”:AGP">
                       <p>血糖トレンドの<br>”読み方”:AGP</p>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a class="hover" href="/trend/quiz/001.php">
                       <img src="./images/top/summary-4-sp.png" alt="グラフで見る血糖トレンドクイズ">
                       <p>グラフで見る<br>血糖トレンドクイズ</p>
                     </a>
@@ -310,27 +313,30 @@
                 </ul>
               </div>
             </div>
+          </section>
             <!-- ▲ summary ▲ -->
+
             <!-- ▼ lead ▼ -->
+          <section id="lead">
             <div class="sp-none">
               <div class="contents lead notojp">
                 <h2 class="contents__title">血糖トレンドを治療に生かす</h2>
                 <p class="contents__text">血糖トレンドを知り、活用することで、あなたの生活がよりよくなるかも。ここでは、血糖トレンドの活用方法について紹介いたします。</p>
                 <ul class="lead__container">
                   <li>
-                    <a href="#">
+                    <a class="hover" href="http://dm-rg.net/contents/trend/">
                       <img src="./images/top/lead-1-pc.png" alt="＜医療関係者向け＞シリーズ“血糖トレンド”をどう生かすか">
                       <p>＜医療関係者向け＞シリーズ<br>“血糖トレンド”をどう生かすか</p>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a class="hover" href="/trend/forum/">
                       <img src="./images/top/lead-2-pc.png" alt="血糖トレンドフォーラム—血糖トレンドについてのコミュニティ—">
                       <p>血糖トレンドフォーラム<br><span>—血糖トレンドについてのコミュニティ—</span></p>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a class="hover" href="/trend/survey/">
                       <img src="./images/top/lead-3-pc.png" alt="数字で見る血糖測定みんなの悩み">
                       <p>数字で見る血糖測定<br>みんなの悩み</p>
                     </a>
@@ -344,25 +350,25 @@
                 <p class="contents__text__sp">血糖トレンドを知り、活用することで、あなたの<br>生活がよりよくなるかも。ここでは、血糖トレン<br>ドの活用方法について紹介いたします。</p>
                 <ul class="lead__container__sp">
                   <li>
-                    <a href="#">
+                    <a class="hover" href="http://dm-rg.net/contents/trend/">
                       <img src="./images/top/lead-1-sp.png" alt="＜医療関係者向け＞シリーズ“血糖トレンド”をどう生かすか">
                       <p>＜医療関係者向け＞<br>シリーズ<br>“血糖トレンド”を<br>どう生かすか</p>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a class="hover" href="/trend/forum/">
                       <img src="./images/top/lead-2-sp.png" alt="血糖トレンドフォーラム—血糖トレンドについてのコミュニティ—">
                       <p>血糖トレンド<br>フォーラム<br>—血糖トレンドについての<br>コミュニティ—</p>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a class="hover" href="/trend/survey/">
                       <img src="./images/top/lead-3-sp.png" alt="数字で見る血糖測定みんなの悩み">
                       <p>数字で見る血糖測定<br>みんなの悩み</p>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a class="hover" href="/trend/quiz/001.php">
                       <img src="./images/top/summary-4-sp.png" alt="グラフで見る血糖トレンドクイズ">
                       <p>グラフで見る<br>血糖トレンドクイズ</p>
                     </a>
@@ -370,21 +376,23 @@
                 </ul>
               </div>
             </div>
+          </section>
             <!-- ▲ lead ▲ -->
             <!-- ▼ detail ▼ -->
+          <section id="detail">
             <div class="sp-none">
               <div class="contents detail notojp">
                 <h2 class="contents__title">血糖トレンドを知る方法</h2>
                 <p class="contents__text">血糖トレンドを知るにはどうしたらいい？ここでは、その方法や各測定機器の違いについて紹介いたします。</p>
                 <ul class="detail__container">
                   <li>
-                    <a href="#">
+                    <a class="hover" href="/trend/knowing/001.php">
                       <img src="./images/top/detail-1-pc.png" alt="血糖トレンドを知るには">
                       <p>血糖トレンドを知るには</p>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a class="hover" href="/trend/survey/">
                       <img src="./images/top/lead-3-pc.png" alt="数字で見る血糖測定みんなの悩み">
                       <p>数字で見る血糖測定<br>みんなの悩み</p>
                     </a>
@@ -398,13 +406,13 @@
                 <p class="contents__text__sp">血糖トレンドを知るにはどうしたらいい？ここで<br>は、その方法や各測定機器の違いについて紹介い<br>たします。</p>
                 <ul class="detail__container__sp">
                   <li>
-                    <a href="#">
+                    <a class="hover" href="/trend/knowing/001.php">
                       <img src="./images/top/detail-1-pc.png" alt="血糖トレンドを知るには">
                       <p>血糖トレンドを<br>知るには</p>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a class="hover" href="/trend/survey/">
                       <img src="./images/top/lead-3-pc.png" alt="数字で見る血糖測定みんなの悩み">
                       <p>数字で見る血糖測定<br>みんなの悩み</p>
                     </a>
@@ -435,15 +443,15 @@
                 src="./images/header-sidebar-footer/footer-banner-2.png" alt="血糖測定が相談できる　医療機関を検索"></a></li>
         </ul>
         <ul class="footer__li">
-          <li><a href="../index.html">糖尿病ネットワークTOP</a></li>
-          <li><a href="../calendar/secondary-use.php.html">ニュース記事の二次利用について</a></li>
-          <li><a href="../koushin/kiyaku/index.html">利用規約</a></li>
-          <li><a href="https://dm-net.co.jp/koushin/privacy/">個人情報取扱い</a></li>
-          <li><a href="../koushin/info/index.html">お問合せ</a></li>
-          <li><a href="../koushin/ad/index.html" target="_blank">広告受付</a></li>
+          <li><a class="hover" href="../index.html">糖尿病ネットワークTOP</a></li>
+          <li><a class="hover" href="../calendar/secondary-use.php.html">ニュース記事の二次利用について</a></li>
+          <li><a class="hover" href="../koushin/kiyaku/index.html">利用規約</a></li>
+          <li><a class="hover" href="https://dm-net.co.jp/koushin/privacy/">個人情報取扱い</a></li>
+          <li><a class="hover" href="../koushin/info/index.html">お問合せ</a></li>
+          <li><a class="hover" href="../koushin/ad/index.html" target="_blank">広告受付</a></li>
         </ul>
         <div class="footer__bottom">
-          このページへのお問い合わせ、ご意見は<a href="../koushin/info/index.html">こちら</a>までお寄せください。
+          このページへのお問い合わせ、ご意見は<a class="hover" href="../koushin/info/index.html">こちら</a>までお寄せください。
         </div>
         <div class="copyright">
           &copy;1996-2022 <a href="http://mhlab.jp/sss/" target="_blank">soshinsha</a>
@@ -459,19 +467,19 @@
                 src="./images/header-sidebar-footer/footer-banner-2-sp.png" alt="血糖測定が相談できる　医療機関を検索"></a></li>
         </ul>
         <ul class="footer__li__sp__top footer__li__sp">
-          <li><a href="../index.html">糖尿病ネットワークTOP</a></li>
+          <li><a class="hover" href="../index.html">糖尿病ネットワークTOP</a></li>
         </ul>
         <ul class="footer__li__sp">
-          <li><a href="../calendar/secondary-use.php.html">ニュース記事の二次利用について</a></li>
-          <li><a href="../koushin/kiyaku/index.html">利用規約</a></li>
+          <li><a class="hover" href="../calendar/secondary-use.php.html">ニュース記事の二次利用について</a></li>
+          <li><a class="hover" href="../koushin/kiyaku/index.html">利用規約</a></li>
         </ul>
         <ul class="footer__li__sp">
-          <li><a href="https://dm-net.co.jp/koushin/privacy/">個人情報取扱い</a></li>
-          <li><a href="../koushin/info/index.html">お問合せ</a></li>
-          <li><a href="../koushin/ad/index.html" target="_blank">広告受付</a></li>
+          <li><a class="hover" href="https://dm-net.co.jp/koushin/privacy/">個人情報取扱い</a></li>
+          <li><a class="hover" href="../koushin/info/index.html">お問合せ</a></li>
+          <li><a class="hover" href="../koushin/ad/index.html" target="_blank">広告受付</a></li>
         </ul>
         <div class="footer__bottom__sp">
-          このページへのお問い合わせ、ご意見は<a href="../koushin/info/index.html">こちら</a>までお寄せください。
+          このページへのお問い合わせ、ご意見は<a class="hover" href="../koushin/info/index.html">こちら</a>までお寄せください。
         </div>
         <div class="copyright__sp">
           &copy;1996-2022 <a href="http://mhlab.jp/sss/" target="_blank">soshinsha</a>
@@ -509,26 +517,26 @@
     </ul>
     <h3 class="notojp">血糖トレンドとは</h3>
     <ul class="notojp">
-      <li><a href="#">4-7-A 血糖トレンドとは</a></li>
-      <li><a href="#">血糖トレンド基礎知識</a></li>
-      <li><a href="#">血統トレンドを知るには</a></li>
-      <li><a href="#">血糖トレンドの"読み方":AGP</a></li>
-      <li><a href="#">グラフで見る血糖トレンドクイズ</a></li>
+      <li><a href="#summary">4-7-A 血糖トレンドとは</a></li>
+      <li><a href="/trend/oshiete/001.php">血糖トレンド基礎知識</a></li>
+      <li><a href="/trend/knowing/001.php">血統トレンドを知るには</a></li>
+      <li><a href="/trend/agp/001.php">血糖トレンドの"読み方":AGP</a></li>
+      <li><a href="/trend/quiz/001.php">グラフで見る血糖トレンドクイズ</a></li>
     </ul>
     <h3>血糖トレンドを治療に生かす</h3>
     <ul>
-      <li><a href="#">4-7-B血糖トレンドを治療に生かす</a></li>
-      <li><a href="#">
+      <li><a href="#lead">4-7-B血糖トレンドを治療に生かす</a></li>
+      <li><a href="http://dm-rg.net/contents/trend/">
           <医療関係者向け>シリーズ<br>"血糖トレンド"をどう生かすか
         </a></li>
-      <li><a href="#">血糖トレンドフォーラム<br><span>-血糖トレンドについてのコミュニティ-</span></a></li>
-      <li><a href="#">数字で見る血糖測定みんなの悩み</a></li>
+      <li><a href="/trend/forum/">血糖トレンドフォーラム<br><span>-血糖トレンドについてのコミュニティ-</span></a></li>
+      <li><a href="/trend/survey/">数字で見る血糖測定みんなの悩み</a></li>
     </ul>
     <h3>血糖トレンドを知る方法</h3>
     <ul>
-      <li><a href="#">4-7-C血糖トレンドを知る方法〜<br>SMBG、CGM、FGM</a></li>
-      <li><a href="#">血糖トレンドを知るには</a></li>
-      <li><a href="#">数字で見る血糖測定みんなの悩み</a></li>
+      <li><a href="#detail">4-7-C血糖トレンドを知る方法〜<br>SMBG、CGM、FGM</a></li>
+      <li><a href="/trend/knowing/001.php">血糖トレンドを知るには</a></li>
+      <li><a href="/trend/survey/">数字で見る血糖測定みんなの悩み</a></li>
     </ul>
     <h3>測定機器を知る</h3>
     <div class="sb-toggle-left sidebar__left__close">
@@ -602,7 +610,7 @@
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/slidebars.min.js"></script>
   <script type="text/javascript" src='js/config%EF%B9%96d=22114152020.js'></script>
-  <script type="text/javascript" src='./js/header-banner-footer.js'></script>
+  <script type="text/javascript" src='./js/top-article.js'></script>
 
   <!-- ▼ フローティングバナー ▼ -->
   <div class="floating-banner side-banner">

@@ -36,7 +36,7 @@
 
 <!-- ヘッダー　サイドバー　フッター　作り直す際追加　202211 -->
 <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
-<link rel="stylesheet" href="./css/header-banner-footer.css">
+<link rel="stylesheet" href="./css/top-article.css">
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -98,9 +98,9 @@ ytag({"type":"ycl_cookie", "config":{"ycl_use_non_cookie_storage":true}});
               <ul class="header__nav__pc">
                 <li class="nav__top"><a href="#"><img src="./images/header-sidebar-footer/nav-1.png"
                       alt="血糖トレンドの情報ファイル TOP"></a></li>
-                <li class="nav notojp"><a href="#">血糖トレンドとは</a></li>
-                <li class="nav notojp"><a href="#">血糖トレンドを<br>治療に生かす</a></li>
-                <li class="nav notojp"><a href="#">血糖トレンドを<br>知る方法</a></li>
+                <li class="nav notojp"><a href="/trend/#summary">血糖トレンドとは</a></li>
+                <li class="nav notojp"><a href="/trend/#lead">血糖トレンドを<br>治療に生かす</a></li>
+                <li class="nav notojp"><a href="/trend/#detail">血糖トレンドを<br>知る方法</a></li>
                 <li class="nav notojp"><a href="#">測定機器を知る</a></li>
               </ul>
             </div>
@@ -127,76 +127,380 @@ ytag({"type":"ycl_cookie", "config":{"ycl_use_non_cookie_storage":true}});
 
 <!-- ▼ ＠＠＠＠＠＠ ▼ -->
 <!-- ▼ ※辻村注釈　ここからカテゴリ（ディレクトリ）毎にテンプレわかれる。「血糖トレンドを知るには。」カテゴリ（knowing）のテンプレ ▼ -->
-<div id="main" class="glu-trend subPage shiruniwa">
-<!-- ▼ main-visual ▼ -->
-<div class="main-visual clearfix pc-none">
-<div class="title"><a href="/trend/"><img src="/trend/images/title-sub.jpg" alt="血糖トレンドの情報ファイル"></a></div>
-</div>
-<!-- ▲ main-visual ▲ -->
-<!-- ▼ sub-header ▼ -->
-<div class="sub-header sp-none">
-<div class="site-title"><a href="/trend/"><img src="/trend/images/title-sub.jpg" alt="血糖トレンドの情報ファイル"></a></div>
-<div class="corner-title"><a href="001.php"><img src="/trend/images/title-shiruniwa.jpg" alt="血糖トレンドを知るには。"></a></div>
-</div>
-<!-- ▲ sub-header ▲ -->
+<div id="main" class="glu-trend subPage shiruniwa main__container">
+  <!-- ▼ hero ▼ -->
+  <section>
+    <div class="sp-none">
+      <div class="trend__hero">
+        <h1><img src="./images/article/hero-pc.png" alt="血糖トレンドを調べる際に使用する機器の違い"></h1>
+      </div>
+    </div>
+    <div class="pc-none">
+      <div class="trend__hero__sp">
+        <h1><img src="./images/article/hero-sp.png" alt="血糖トレンドを調べる際に使用する機器の違い"></h1>
+      </div>
+    </div>
+  </section>
+  <!-- ▲ hero ▲ -->
 
-<!-- ▼  ▼ -->
-<div class="sp-title pc-none">
-<div class="wrap">
-<div class="mainTitle">
-血糖トレンドを知るには。
-</div>
-ここでは、血糖トレンドを調べるために使用する機器の特徴と、あわせて知っておきたい「血糖値」と「間質液中の糖濃度」の違いについて紹介します。<div class="author">監修：西村 理明 先生（東京慈恵会医科大学糖尿病・代謝・内分泌内科）</div>
-</div>
-</div>
-<!-- ▲  ▲ -->
+  <!-- ▼ outline ▼ -->
+  <section class="outline">
+    <div class="sp-none">
+      <div class="outline__container__pc notojp">
+        <h2>測定してわかること</h2>
+        <ul class="outline__contents__pc">
+          <li>
+            <div class="outline__img1__pc">
+              <img src="./images/article/caption-1-pc.png" alt="血糖自己測定器'SMBG'">
+            </div>
+            <div class="outline__wrapper__pc">
+              <label>測定した時点の血糖値がわかる</label>
+              <img src="./images/article/outline-1-pc.png" alt="血糖自己測定器">
+              <span>※画像はイメージです</span>
+              <ul>
+                <li>・血糖値を短時間で測定でき、急激な血糖の変化に対応できる</li>
+                <li>・1日7、8回測定することにより、血糖トレンドをある程度調べることもできる</li>
+              </ul>
+              <a href="#">
+                <div class="outline__button__pc">
+                    <label>測定しているもの</label>
+                    <p>血糖値<span>くわしくはこちら</span></p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="outline__img2__pc">
+              <img src="./images/article/caption-2-pc.png" alt="持続血糖モニタ'CGM'ー">
+              <img src="./images/article/caption-3-pc.png" alt="持続血糖モニター'isCGM'">
+            </div>
+            <div class="outline__wrapper__pc">
+              <label>連続した血糖の変化がわかる</label>
+              <img src="./images/article/outline-1-pc.png" alt="持続血糖モニター">
+              <span>※画像はイメージです</span>
+              <ul>
+                <li>・連続測定ができ、数日間にわたる血糖の日内変動の傾向をみることができる</li>
+                <li>・夜間低血糖や食後高血糖を把握しやすい</li>
+              </ul>
+              <a href="#">
+                <div class="outline__button__pc">
+                  <label>測定しているもの</label>
+                  <p>皮下組織間質液中の糖濃度から血糖値を推定した値<span>くわしくはこちら></span></p>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-<!-- ▼ main-visual ▼ -->
-<div class="sub-visual sp-none">
-<img src="/trend/images/title-l-shiruniwa.jpg" alt="血糖トレンドを知るには。">
-<div class="mokuji">
-<a href="001.php">■血糖トレンドを調べる際に使用する機器の違い</a>
-<a href="002.php">■「血糖値」と「間質液中の糖濃度」の違い</a>
+
+
+    <div class="pc-none">
+      <div class="outline__container__sp notojp">
+        <h2>測定してわかること</h2>
+        <ul class="outline__contents__sp">
+          <li>
+            <div class="outline__img1__sp">
+              <img src="./images/article/caption-1-sp.png" alt="血糖自己測定器'SMBG'">
+            </div>
+            <div class="outline__wrapper__sp">
+              <label>測定した時点の血糖値がわかる</label>
+              <img src="./images/article/outline-1-sp.png" alt="血糖自己測定器">
+              <span>※画像はイメージです</span>
+              <ul>
+                <li>・血糖値を短時間で測定でき、急激な血糖の変化に対応できる</li>
+                <li>・1日7、8回測定することにより、血糖トレンドをある程度調べることもできる</li>
+              </ul>
+              <a class="hover" href="#">
+                <img src="./images/article/outline-button1-sp.png" alt="測定しているもの、血糖値。くわしくはこちら">
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="outline__img2__sp">
+              <img src="./images/article/caption-2-sp.png" alt="持続血糖モニタ'CGM'ー">
+              <img src="./images/article/caption-3-sp.png" alt="持続血糖モニター'isCGM'">
+            </div>
+            <div class="outline__wrapper__sp">
+              <label>連続した血糖の変化がわかる</label>
+              <img src="./images/article/outline-1-sp.png" alt="持続血糖モニター">
+              <span>※画像はイメージです</span>
+              <ul>
+                <li>・連続測定ができ、数日間にわたる血糖の日内変動の傾向をみることができる</li>
+                <li>・夜間低血糖や食後高血糖を把握しやすい</li>
+              </ul>
+              <a class="hover" href="#">
+                <img src="./images/article/outline-button2-sp.png" alt="測定しているもの、皮下組織間質液中の糖濃度から血糖値を推定した値。くわしくはこちら">
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<!-- ▲ outline ▲ -->
+
+
+<!-- ▼ description ▼ -->
+<section class="description">
+  <div class="sp-none">
+    <div class="description__container__pc notojp">
+      <h2>測定方法</h2>
+      <ul class="description__contents__pc">
+        <li>
+          <div class="description__img__pc">
+            <img src="./images/article/caption-1-pc.png" alt="血糖自己測定器'SMBG'">
+          </div>
+          <div class="description__wrapper__pc">
+            <label>指先穿刺による測定<br>　</label>
+            <img src="./images/article/description-1-pc.png" alt="血糖自己測定器">
+            <span class="description__img__pc">※画像はイメージです</span>
+            <ul>
+              <li>●穿刺針を用いて指先等から採血する</li>
+              <li>●血液を、チップ（血糖測定電極）に塗布する</li>
+              <li>●数秒〜10秒程度経過後、機器のモニターに血糖値が表示される</li>
+              <li>●測定ごとに、チップ（血糖測定電極）と穿刺針が必要。</li>
+            </ul>
+            <div class="description__button__pc">
+                <label>測定期間</label>
+                <p>チップ（血糖測定電極）の枚数による</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="description__img__pc">
+            <img src="./images/article/caption-2-pc.png" alt="持続血糖モニター'CGM'">
+          </div>
+          <div class="description__wrapper__pc">
+            <label>皮下装着のセンサーによる測定<br>（無線接続）</label>
+            <img src="./images/article/description-2-pc.png" alt="血糖自己測定器">
+            <span class="description__img__pc">※画像はイメージです</span>
+            <ul>
+              <li>●腹部などに専用のセンサーとトランスミッターなどを装着する</li>
+              <li>●専用モニター、モバイル機器、インスリンポンプのいずれかの画面に数値が表示される※１</li>
+              <li>●測定期間中、センサーは装着したままにできる</li>
+              <li>●1日数回、SMBGの測定値を用いた較正が必要※2</li>
+            </ul>
+            <span>※１：プロフェッショナルCGMの場合には、数値の確認は医療機関でのみ可能</span>
+            <span>※２：一部機器では較正が不要（低血糖／高血糖が疑われる場合や測定値と一致しない症状がある時などは、SMBGが必要）</span>
+            <div class="description__button__pc">
+                <label>測定期間</label>
+                <p>6～10日間（機器による）</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="description__img__pc">
+            <img src="./images/article/caption-3-pc.png" alt="持続血糖モニター'isCGM'">
+          </div>
+          <div class="description__wrapper__pc">
+            <label>皮下装着のセンサーによる測定<br>（スキャン）</label>
+            <img src="./images/article/description-3-pc.png" alt="血糖自己測定器">
+            <span class="description__img__pc">※画像はイメージです</span>
+            <ul>
+              <li>●上腕の後ろ側に専用のセンサーを装着する</li>
+              <li>●センサー部に自動的に数値が記録される</li>
+              <li>●リーダーあるいはモバイル機器をセンサーにかざしてスキャンすると、その画面に数値が表示される※３</li>
+              <li>●測定期間中、センサーは装着したままにできる</li>
+              <li>●SMBGの測定値を用いた較正は不要</li>
+            </ul>
+            <span>（低血糖／高血糖が疑われる場合や測定値と一致しない症状がある時などは、SMBGが必要）</span>
+            <span>※３：医療従事者用システムの場合は、医療機関でのみ数値の確認が可能</span>
+            <div class="description__button__pc">
+              <label>測定期間</label>
+              <div class="description__button__inner__pc">
+                <p>最長<br>14日間</p>
+                <span>8時間ごとのスキャンが必要<br>医療従事者用システムでは不要</span>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div class="pc-none">
+    <div class="description__container__sp notojp">
+      <h2>測定方法</h2>
+      <ul class="description__contents__sp">
+        <li>
+          <div class="description__img__sp">
+            <img src="./images/article/caption-1-sp.png" alt="血糖自己測定器'SMBG'">
+          </div>
+          <div class="description__wrapper__sp">
+            <label>指先穿刺による測定<br>　</label>
+            <img src="./images/article/description-1-sp.png" alt="血糖自己測定器">
+            <span class="description__img__sp">※画像はイメージです</span>
+            <ul>
+              <li>●穿刺針を用いて指先等から採血する</li>
+              <li>●血液を、チップ（血糖測定電極）に塗布する</li>
+              <li>●数秒〜10秒程度経過後、機器のモニターに血糖値が表示される</li>
+              <li>●測定ごとに、チップ（血糖測定電極）と穿刺針が必要。</li>
+            </ul>
+            <div class="description__button__sp">
+                <label>測定期間</label>
+                <p>チップ（血糖測定電極）の枚数による</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="description__img__sp">
+            <img src="./images/article/caption-2-sp.png" alt="持続血糖モニター'CGM'">
+          </div>
+          <div class="description__wrapper__sp">
+            <label>皮下装着のセンサーによる測定<br>（無線接続）</label>
+            <img src="./images/article/description-2-sp.png" alt="血糖自己測定器">
+            <span class="description__img__pc">※画像はイメージです</span>
+            <ul>
+              <li>●腹部などに専用のセンサーとトランスミッターなどを装着する</li>
+              <li>●専用モニター、モバイル機器、インスリンポンプのいずれかの画面に数値が表示される※１</li>
+              <li>●測定期間中、センサーは装着したままにできる</li>
+              <li>●1日数回、SMBGの測定値を用いた較正が必要※2</li>
+            </ul>
+            <span>※１：プロフェッショナルCGMの場合には、数値の確認は医療機関でのみ可能</span>
+            <span>※２：一部機器では較正が不要（低血糖／高血糖が疑われる場合や測定値と一致しない症状がある時などは、SMBGが必要）</span>
+            <div class="description__button__sp">
+                <label>測定期間</label>
+                <p>6～10日間（機器による）</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="description__img__sp">
+            <img src="./images/article/caption-3-sp.png" alt="持続血糖モニター'isCGM'">
+          </div>
+          <div class="description__wrapper__sp">
+            <label>皮下装着のセンサーによる測定<br>（スキャン）</label>
+            <img src="./images/article/description-3-sp.png" alt="血糖自己測定器">
+            <span class="description__img__sp">※画像はイメージです</span>
+            <ul>
+              <li>●上腕の後ろ側に専用のセンサーを装着する</li>
+              <li>●センサー部に自動的に数値が記録される</li>
+              <li>●リーダーあるいはモバイル機器をセンサーにかざしてスキャンすると、その画面に数値が表示される※３</li>
+              <li>●測定期間中、センサーは装着したままにできる</li>
+              <li>●SMBGの測定値を用いた較正は不要</li>
+            </ul>
+            <span>（低血糖／高血糖が疑われる場合や測定値と一致しない症状がある時などは、SMBGが必要）</span>
+            <span>※３：医療従事者用システムの場合は、医療機関でのみ数値の確認が可能</span>
+            <div class="description__button__sp">
+                <label>測定期間</label>
+                <div class="description__button__inner__sp">
+                  <p>最長14日間</p>
+                  <span>(8時間ごとのスキャンが必要・<br>医療従事者用システムでは不要)</span>
+                </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+  <!-- ▲ description ▲ -->
+
+
+  <!-- ▼ support ▼ -->
+  <section class="support">
+    <div class="sp-none">
+      <div class="support__container__pc notojp">
+        <h2>対象となる患者さん</h2>
+        <span class="support__span__pc">※各機器には保険診療上の算定要件があります。詳しくは医師、もしくはかかりつけの医療機関にお問い合わせください。</span>
+        <ul class="support__contents__pc">
+          <li>
+            <div class="support__img__pc">
+              <img src="./images/article/caption-1-pc.png" alt="血糖自己測定器'SMBG'">
+            </div>
+            <ul class="support__text">
+              <li>●血糖値を下げる注射薬（インスリン製剤とGLP-1受容体作動薬）を使用中の患者</li>
+              <li>●妊娠中の糖尿病患者、妊娠糖尿病の患者</li>
+            </ul>
+          </li>
+          <li>
+            <div class="support__img__pc">
+              <img src="./images/article/caption-2-pc.png" alt="持続血糖モニター'CGM'">
+            </div>
+            <ul class="support__text">
+              <label>プロフェッショナルCGM</label>
+              <li>●１型糖尿病患者</li>
+              <li>●重篤な有害事象が起きている血糖コントロールが不安定な２型糖尿病患者</li>
+              <label>リアルタイムGCM</label>
+              <li>●急性発症１型または劇症１型の糖尿病患者</li>
+              <li>●インスリンポンプ（SAP以外）使用者</li>
+              <label>SAP</label>
+              <li>●インスリンポンプ使用者</li>
+            </ul>
+          </li>
+          <li>
+            <div class="support__img__pc">
+              <img src="./images/article/caption-3-pc.png" alt="持続血糖モニター'isCGM'">
+            </div>
+            <ul class="support__text">
+              <li>●血糖値を下げる注射薬（インスリン製剤とGLP-1受容体作動薬）を使用中の患者</li>
+              <li>●妊娠中の糖尿病患者、妊娠糖尿病の患者</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+    <div class="pc-none">
+      <div class="support__container__sp notojp">
+        <h2>対象となる患者さん</h2>
+        <span class="support__span__sp">※各機器には保険診療上の算定要件があります。詳しくは医師、もしくはかかりつけの医療機関にお問い合わせください。</span>
+        <ul class="support__contents__sp">
+          <li>
+            <div class="support__img__sp">
+              <img src="./images/article/caption-1-sp.png" alt="血糖自己測定器'SMBG'">
+            </div>
+            <ul class="support__text__sp">
+              <li>●血糖値を下げる注射薬（インスリン製剤とGLP-1受容体作動薬）を使用中の患者</li>
+              <li>●妊娠中の糖尿病患者、妊娠糖尿病の患者</li>
+            </ul>
+          </li>
+          <li>
+            <div class="support__img__sp">
+              <img src="./images/article/caption-2-sp.png" alt="持続血糖モニター'CGM'">
+            </div>
+            <ul class="support__text__sp">
+              <label>プロフェッショナルCGM</label>
+              <li>●１型糖尿病患者</li>
+              <li>●重篤な有害事象が起きている血糖コントロールが不安定な２型糖尿病患者</li>
+              <label>リアルタイムGCM</label>
+              <li>●急性発症１型または劇症１型の糖尿病患者</li>
+              <li>●インスリンポンプ（SAP以外）使用者</li>
+              <label>SAP</label>
+              <li>●インスリンポンプ使用者</li>
+            </ul>
+          </li>
+          <li>
+            <div class="support__img__sp">
+              <img src="./images/article/caption-3-sp.png" alt="持続血糖モニター'isCGM'">
+            </div>
+            <ul class="support__text__sp">
+              <li>●血糖値を下げる注射薬（インスリン製剤とGLP-1受容体作動薬）を使用中の患者</li>
+              <li>●妊娠中の糖尿病患者、妊娠糖尿病の患者</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+<!-- ▲ support ▲ -->
+  <div class="sp-none">
+    <label class="bottom__label__pc">※上記の情報により、治療方法や現在使用中の医療機器について疑問などを持たれた場合には、主治医に必ず相談してください。</label>
+  </div>
+  <div class="pc-none">
+    <label class="bottom__label__sp">※上記の情報により、治療方法や現在使用中の医療機器について疑問などを持たれた場合には、主治医に必ず相談してください。</label>
+  </div>
 </div>
-<div class="textR">監修：西村 理明 先生（東京慈恵会医科大学糖尿病・代謝・内分泌内科）</div>
-</div>
-<!-- ▲ main-visual ▲ -->
-
-<!-- ▼ content ▼ -->
-<div class="content chigai">
-<div class="title-area">
-<h1><mt:entryTitle></h1>
-</div>
-
-<!-- ▼ oshiete-wrap ▼ -->
-<div class="oshiete-wrap">
-
-<!-- ▼ ＠＠＠記事部分＠＠＠ ▼ -->
-
-<!-- ▲ ＠＠＠記事部分＠＠＠ ▲ -->
-
-</div>
-<!-- ▲ oshiete-wrap ▲ -->
-
-</div>
-<!-- ▲ content ▲ -->
-
-<div class="button">
-<a href="/trend/">「血糖トレンド情報ファイル」のTOPへ &#9654;</a>
-</div>
 
 
-<!-- ▼ ※辻村注釈　全ページ共通パーツ　TOPページ以外の記述も可能 ▼ -->
-<!-- ▼ medicalnote.jp ▼ -->
-<div class="sub-visual">
-<a class="pcOnly" href="https://medicalnote.jp/features/search/glucose_monitoring/hospitals" target="_blank">
-<img src="/trend/images/202207c-894px166px.jpg" alt="202207c-894px166px.jpg">
-</a>
-<a class="spOnly" href="https://medicalnote.jp/features/search/glucose_monitoring/hospitals" target="_blank">
-<img src="/trend/images/202207b-1706px839px.jpg" alt="202207b-1706px839px.jpg">
-</a>
-</div>
-<!-- ▲ medicalnote.jp ▲ -->
 
 <!-- ▼ footer ▼ -->
       <footer>
@@ -291,24 +595,26 @@ ytag({"type":"ycl_cookie", "config":{"ycl_use_non_cookie_storage":true}});
     </ul>
     <h3 class="notojp">血糖トレンドとは</h3>
     <ul class="notojp">
-      <li><a href="#">4-7-A 血糖トレンドとは</a></li>
-      <li><a href="#">血糖トレンド基礎知識</a></li>
-      <li><a href="#">血統トレンドを知るには</a></li>
-      <li><a href="#">血糖トレンドの"読み方":AGP</a></li>
-      <li><a href="#">グラフで見る血糖トレンドクイズ</a></li>
+      <li><a href="/trend/#summary">4-7-A 血糖トレンドとは</a></li>
+      <li><a href="/trend/oshiete/001.php">血糖トレンド基礎知識</a></li>
+      <li><a href="/trend/knowing/001.php">血統トレンドを知るには</a></li>
+      <li><a href="/trend/agp/001.php">血糖トレンドの"読み方":AGP</a></li>
+      <li><a href="/trend/quiz/001.php">グラフで見る血糖トレンドクイズ</a></li>
     </ul>
     <h3>血糖トレンドを治療に生かす</h3>
     <ul>
-      <li><a href="#">4-7-B血糖トレンドを治療に生かす</a></li>
-      <li><a href="#"><医療関係者向け>シリーズ<br>"血糖トレンド"をどう生かすか</a></li>
-      <li><a href="#">血糖トレンドフォーラム<br><span>-血糖トレンドについてのコミュニティ-</span></a></li>
-      <li><a href="#">数字で見る血糖測定みんなの悩み</a></li>
+      <li><a href="/trend/#lead">4-7-B血糖トレンドを治療に生かす</a></li>
+      <li><a href="http://dm-rg.net/contents/trend/">
+          <医療関係者向け>シリーズ<br>"血糖トレンド"をどう生かすか
+        </a></li>
+      <li><a href="/trend/forum/">血糖トレンドフォーラム<br><span>-血糖トレンドについてのコミュニティ-</span></a></li>
+      <li><a href="/trend/survey/">数字で見る血糖測定みんなの悩み</a></li>
     </ul>
     <h3>血糖トレンドを知る方法</h3>
     <ul>
-      <li><a href="#">4-7-C血糖トレンドを知る方法〜<br>SMBG、CGM、FGM</a></li>
-      <li><a href="#">血糖トレンドを知るには</a></li>
-      <li><a href="#">数字で見る血糖測定みんなの悩み</a></li>
+      <li><a href="/trend/#detail">4-7-C血糖トレンドを知る方法〜<br>SMBG、CGM、FGM</a></li>
+      <li><a href="/trend/knowing/001.php">血糖トレンドを知るには</a></li>
+      <li><a href="/trend/survey/">数字で見る血糖測定みんなの悩み</a></li>
     </ul>
     <h3>測定機器を知る</h3>
     <div class="sb-toggle-left sidebar__left__close">
@@ -381,7 +687,7 @@ ytag({"type":"ycl_cookie", "config":{"ycl_use_non_cookie_storage":true}});
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="js/slidebars.min.js"></script>
 <script type="text/javascript" src='js/config%EF%B9%96d=22114152020.js'></script>
-<script type="text/javascript" src='./js/header-banner-footer.js'></script>
+<script type="text/javascript" src='./js/top-article.js'></script>
 
 <!-- ▼ フローティングバナー ▼ -->
   <div class="floating-banner side-banner">
