@@ -13,9 +13,37 @@
     }
 }
 
-.hover:hover {
+.hover{
+    transition-duration: .3s;
+
+    &:hover {
+    background-color: #eee;
+    opacity: 1;
+
+        .hover__img {
+        transform: scale(105%);
+        }
+    }
+}
+
+.img__container {
+    display: inline-block;
+    overflow: hidden;
+
+    >img {
+        display: block;
+        transition-duration: .3s;
+    }
+}
+
+.hover2:hover {
+    opacity: 0.6;
+    transition-duration: .3s;
+}
+
+.hover3:hover {
     opacity: 0.8;
-    filter: grayscale(60%);
+    transition-duration: .5s;
 }
 
 // ========================  header  ===========================
@@ -193,8 +221,8 @@
 
 .trend__hero__sp {
     object-fit: contain;
-    width: calc(100% + 30px);
-    transform: translate(-15px,-9px);
+    width: calc(100% + 50px);
+    transform: translate(-25px,-10px);
 }
 
 
@@ -242,8 +270,29 @@
         justify-content: space-between;
         width: 93.5%;
         margin: 10px auto 0;
-        li {
-            width: 32%;
+        a {
+            width: 27.5%;
+            padding: 20px;
+            border: 1px solid #C1C1C1;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                height: 250px;
+
+
+                h2 {
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin: 10px 0;
+                }
+
+                .description__button__pc {
+                    width: 60%;
+                    margin: auto auto 0;
+                    transition-duration: .2s;
+                }
+            }
         }
     }
 
@@ -256,8 +305,8 @@
     }
 }
 
-.description__container__sp {
-    margin: 10px;
+.trend__description__container__sp {
+    margin: 10px 0;
     padding: 20px;
     background-color: #fff;
 
@@ -313,7 +362,7 @@
 .middle__banner {
     display: flex;
     justify-content: center;
-    margin: 30px 0;
+    margin: 40px 0;
 
     li {
         width: 50%;
@@ -322,8 +371,8 @@
 }
 
 .middle__banner__sp {
-    width: calc(100% + 20px);
-    transform: translateX(-10px);
+    width: calc(100% + 50px);
+    transform: translateX(-25px);
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -342,7 +391,7 @@
 .contents {
     padding: 20px 25px;
     background-color: #fff;
-    margin: 40px 0;
+    margin: 40px 0 30px;
 }
 
 .contents__title {
@@ -434,7 +483,7 @@
 
 .contents__sp {
     background-color: #fff;
-    margin: 20px 10px;
+    margin: 20px 0;
 }
 
 .contents__title__sp {
@@ -740,7 +789,7 @@
 
         .outline__wrapper__sp {
             background-color: #DEF0F7;
-            padding-bottom: 3%;
+            padding-bottom: 5%;
 
             label {
                 font-size: calc(14px + 21 * ((100vw - 320px) / 735));

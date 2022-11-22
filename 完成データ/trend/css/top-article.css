@@ -12,9 +12,34 @@
     margin: 15px;
   }
 }
+.hover {
+  transition-duration: 0.3s;
+}
 .hover:hover {
+  background-color: #eee;
+  opacity: 1;
+}
+.hover:hover .hover__img {
+  transform: scale(105%);
+}
+
+.img__container {
+  display: inline-block;
+  overflow: hidden;
+}
+.img__container > img {
+  display: block;
+  transition-duration: 0.3s;
+}
+
+.hover2:hover {
+  opacity: 0.6;
+  transition-duration: 0.3s;
+}
+
+.hover3:hover {
   opacity: 0.8;
-  filter: grayscale(60%);
+  transition-duration: 0.5s;
 }
 
 .header__bottom {
@@ -163,8 +188,8 @@
 .trend__hero__sp {
   -o-object-fit: contain;
      object-fit: contain;
-  width: calc(100% + 30px);
-  transform: translate(-15px, -9px);
+  width: calc(100% + 50px);
+  transform: translate(-25px, -10px);
 }
 
 .trend__description__container__pc {
@@ -202,8 +227,25 @@
   width: 93.5%;
   margin: 10px auto 0;
 }
-.trend__description__container__pc .description__bottom li {
-  width: 32%;
+.trend__description__container__pc .description__bottom a {
+  width: 27.5%;
+  padding: 20px;
+  border: 1px solid #C1C1C1;
+}
+.trend__description__container__pc .description__bottom a li {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+}
+.trend__description__container__pc .description__bottom a li h2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.trend__description__container__pc .description__bottom a li .description__button__pc {
+  width: 60%;
+  margin: auto auto 0;
+  transition-duration: 0.2s;
 }
 .trend__description__container__pc .description__supplement {
   margin-top: 10px;
@@ -213,40 +255,40 @@
   color: #35516B;
 }
 
-.description__container__sp {
-  margin: 10px;
+.trend__description__container__sp {
+  margin: 10px 0;
   padding: 20px;
   background-color: #fff;
 }
-.description__container__sp img {
+.trend__description__container__sp img {
   width: 100%;
 }
-.description__container__sp .description__top__text__sp {
+.trend__description__container__sp .description__top__text__sp {
   width: 100%;
   height: 100%;
   display: block;
 }
-.description__container__sp .description__top__text__sp h3 {
+.trend__description__container__sp .description__top__text__sp h3 {
   font-size: calc(6.5vw - 5px);
   font-weight: bold;
   margin: 5% 0 2%;
 }
-.description__container__sp .description__top__text__sp p {
+.trend__description__container__sp .description__top__text__sp p {
   font-size: calc(4.5vw - 5px);
 }
-.description__container__sp .description__bottom__sp {
+.trend__description__container__sp .description__bottom__sp {
   margin-top: 5%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.description__container__sp .description__bottom__sp li {
+.trend__description__container__sp .description__bottom__sp li {
   width: 48.5%;
 }
-.description__container__sp .description__bottom__sp li:nth-child(3) {
+.trend__description__container__sp .description__bottom__sp li:nth-child(3) {
   margin-top: 3.5%;
 }
-.description__container__sp .description__supplement__sp {
+.trend__description__container__sp .description__supplement__sp {
   margin-top: 15px;
   font-size: 12px;
   font-weight: bold;
@@ -257,7 +299,7 @@
 .middle__banner {
   display: flex;
   justify-content: center;
-  margin: 30px 0;
+  margin: 40px 0;
 }
 .middle__banner li {
   width: 50%;
@@ -265,8 +307,8 @@
 }
 
 .middle__banner__sp {
-  width: calc(100% + 20px);
-  transform: translateX(-10px);
+  width: calc(100% + 50px);
+  transform: translateX(-25px);
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -278,7 +320,7 @@
 .contents {
   padding: 20px 25px;
   background-color: #fff;
-  margin: 40px 0;
+  margin: 40px 0 30px;
 }
 
 .contents__title {
@@ -364,7 +406,7 @@
 
 .contents__sp {
   background-color: #fff;
-  margin: 20px 10px;
+  margin: 20px 0;
 }
 
 .contents__title__sp {
@@ -617,7 +659,7 @@
 }
 .outline__container__sp .outline__contents__sp .outline__wrapper__sp {
   background-color: #DEF0F7;
-  padding-bottom: 3%;
+  padding-bottom: 5%;
 }
 .outline__container__sp .outline__contents__sp .outline__wrapper__sp label {
   font-size: calc(14px + 21 * (100vw - 320px) / 735);
