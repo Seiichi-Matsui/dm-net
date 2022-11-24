@@ -153,6 +153,7 @@
 .nav__menu {
   background-color: #E6EDF0 !important;
   padding: 10px 0 55px 0;
+  z-index: 2;
 }
 .nav__menu h3 {
   height: 36px;
@@ -162,6 +163,10 @@
   font-weight: 600;
   padding: 0 25px;
   line-height: 36px;
+}
+.nav__menu h3 a {
+  color: #fff;
+  display: inline;
 }
 .nav__menu ul li {
   display: flex;
@@ -1368,4 +1373,12 @@
   background: none !important;
   color: #333 !important;
   cursor: pointer;
+}
+
+.floating-banner {
+  z-index: 1;
+}
+
+.menu-dmnet {
+  z-index: 2;
 }/*# sourceMappingURL=top-article.css.map */
