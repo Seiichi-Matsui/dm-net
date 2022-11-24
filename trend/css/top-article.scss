@@ -67,7 +67,7 @@
         max-width: 1000px;
         display: flex;
         background-color: #E6EDF0;
-        
+
         li {
             display: table;
             border-right: 2px solid #FFF;
@@ -78,7 +78,7 @@
             }
 
             a {
-                display: table-cell;            
+                display: table-cell;
                 vertical-align: middle;
                 line-height: 15px;
             }
@@ -99,7 +99,7 @@
         }
     }
 
-    .header__nav__sp__container { 
+    .header__nav__sp__container {
         background-color: #E6EDF0;
         border-bottom: 3px solid #3A55CC;
         width: 100vw;
@@ -135,7 +135,7 @@
                 img {
                     width: 70%;
                 }
-                
+
             }
 
 
@@ -334,7 +334,7 @@
     }
 
     .description__bottom__sp {
-        
+
         margin-top: 5%;
         display: flex;
         justify-content: space-between;
@@ -359,7 +359,7 @@
 
 
                 img {
-                    width: 75%;
+                    width: 100%;
                     display: block;
                     margin: auto auto 0;
                 }
@@ -626,7 +626,7 @@
         &:nth-child(4) {
             margin-top: 3%;
         }
-        
+
 
     }
 }
@@ -641,7 +641,7 @@
 .outline__container__pc {
     background-color: #fff;
     padding: 30px 30px 30px;
-    
+
 
     h2 {
         margin: 0 auto;
@@ -687,7 +687,7 @@
                 margin: 10px auto;
                 display: block;
             }
-    
+
 
             span {
                 font-size: 10px;
@@ -796,7 +796,7 @@
     margin-top: 21px;
 
     h2 {
-        
+
         font-size: calc(18px + 25 * ((100vw - 320px) / 735));
         font-weight: bold;
         color: #343D83;
@@ -948,7 +948,7 @@
                 margin: 10px auto 5px;
                 display: block;
             }
-    
+
 
             .description__img__pc {
                 font-size: 10px;
@@ -1232,7 +1232,7 @@
 
     .support__span__sp {
         display: block;
-        
+
         font-size: calc(10px + 17 * ((100vw - 320px) / 735));
     }
 
@@ -1292,7 +1292,7 @@
             font-size: calc(12px + 19 * ((100vw - 320px) / 735));
             text-align: left;
         }
-        
+
     }
 
 }
