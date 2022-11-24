@@ -178,6 +178,7 @@
 .nav__menu {
     background-color: #E6EDF0!important;
     padding: 10px 0 55px 0;
+    z-index: 2;
     h3 {
         height: 36px;
         background-color: #9296AD;
@@ -1470,4 +1471,13 @@
     background: none!important;
     color: #333!important;
     cursor: pointer;
+}
+
+
+.floating-banner {
+    z-index: 1;
+}
+
+.menu-dmnet {
+    z-index: 2;
 }
