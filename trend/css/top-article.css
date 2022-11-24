@@ -449,23 +449,9 @@
 .detail__wrapper .summary__container,
 .detail__wrapper .lead__container,
 .detail__wrapper .detail__container {
-  width: 64.5%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-}
-.summary__wrapper .summary__container .detail__list,
-.summary__wrapper .lead__container .detail__list,
-.summary__wrapper .detail__container .detail__list,
-.lead__wrapper .summary__container .detail__list,
-.lead__wrapper .lead__container .detail__list,
-.lead__wrapper .detail__container .detail__list,
-.detail__wrapper .summary__container .detail__list,
-.detail__wrapper .lead__container .detail__list,
-.detail__wrapper .detail__container .detail__list {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 .summary__wrapper .summary__container li,
 .summary__wrapper .lead__container li,
@@ -476,57 +462,67 @@
 .detail__wrapper .summary__container li,
 .detail__wrapper .lead__container li,
 .detail__wrapper .detail__container li {
-  width: 45%;
+  width: 30%;
   padding: 10px;
   border: 1px solid #C1C1C1;
+  margin-right: 1%;
 }
-.summary__wrapper .summary__container li:nth-child(3), .summary__wrapper .summary__container li:nth-child(4),
+.summary__wrapper .summary__container li:nth-child(3),
 .summary__wrapper .lead__container li:nth-child(3),
-.summary__wrapper .lead__container li:nth-child(4),
 .summary__wrapper .detail__container li:nth-child(3),
-.summary__wrapper .detail__container li:nth-child(4),
 .lead__wrapper .summary__container li:nth-child(3),
-.lead__wrapper .summary__container li:nth-child(4),
 .lead__wrapper .lead__container li:nth-child(3),
-.lead__wrapper .lead__container li:nth-child(4),
 .lead__wrapper .detail__container li:nth-child(3),
-.lead__wrapper .detail__container li:nth-child(4),
 .detail__wrapper .summary__container li:nth-child(3),
-.detail__wrapper .summary__container li:nth-child(4),
 .detail__wrapper .lead__container li:nth-child(3),
-.detail__wrapper .lead__container li:nth-child(4),
-.detail__wrapper .detail__container li:nth-child(3),
-.detail__wrapper .detail__container li:nth-child(4) {
-  margin-top: 2.5%;
+.detail__wrapper .detail__container li:nth-child(3) {
+  margin-right: 0;
 }
-.summary__wrapper .summary__container li p,
-.summary__wrapper .lead__container li p,
-.summary__wrapper .detail__container li p,
-.lead__wrapper .summary__container li p,
-.lead__wrapper .lead__container li p,
-.lead__wrapper .detail__container li p,
-.detail__wrapper .summary__container li p,
-.detail__wrapper .lead__container li p,
-.detail__wrapper .detail__container li p {
-  padding-top: 10px;
+.summary__wrapper .summary__container li:nth-child(4), .summary__wrapper .summary__container li:nth-child(5),
+.summary__wrapper .lead__container li:nth-child(4),
+.summary__wrapper .lead__container li:nth-child(5),
+.summary__wrapper .detail__container li:nth-child(4),
+.summary__wrapper .detail__container li:nth-child(5),
+.lead__wrapper .summary__container li:nth-child(4),
+.lead__wrapper .summary__container li:nth-child(5),
+.lead__wrapper .lead__container li:nth-child(4),
+.lead__wrapper .lead__container li:nth-child(5),
+.lead__wrapper .detail__container li:nth-child(4),
+.lead__wrapper .detail__container li:nth-child(5),
+.detail__wrapper .summary__container li:nth-child(4),
+.detail__wrapper .summary__container li:nth-child(5),
+.detail__wrapper .lead__container li:nth-child(4),
+.detail__wrapper .lead__container li:nth-child(5),
+.detail__wrapper .detail__container li:nth-child(4),
+.detail__wrapper .detail__container li:nth-child(5) {
+  margin-top: 1%;
+}
+.summary__wrapper .summary__container li a p,
+.summary__wrapper .lead__container li a p,
+.summary__wrapper .detail__container li a p,
+.lead__wrapper .summary__container li a p,
+.lead__wrapper .lead__container li a p,
+.lead__wrapper .detail__container li a p,
+.detail__wrapper .summary__container li a p,
+.detail__wrapper .lead__container li a p,
+.detail__wrapper .detail__container li a p {
   font-size: 14px;
   font-weight: bold;
   color: #294762;
   height: 60px;
-  text-align: center;
-  letter-spacing: 2.5px;
-  display: grid;
-  place-items: center center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
 }
-.summary__wrapper .summary__container li p span,
-.summary__wrapper .lead__container li p span,
-.summary__wrapper .detail__container li p span,
-.lead__wrapper .summary__container li p span,
-.lead__wrapper .lead__container li p span,
-.lead__wrapper .detail__container li p span,
-.detail__wrapper .summary__container li p span,
-.detail__wrapper .lead__container li p span,
-.detail__wrapper .detail__container li p span {
+.summary__wrapper .summary__container li a p span,
+.summary__wrapper .lead__container li a p span,
+.summary__wrapper .detail__container li a p span,
+.lead__wrapper .summary__container li a p span,
+.lead__wrapper .lead__container li a p span,
+.lead__wrapper .detail__container li a p span,
+.detail__wrapper .summary__container li a p span,
+.detail__wrapper .lead__container li a p span,
+.detail__wrapper .detail__container li a p span {
   font-size: 11px;
 }
 
