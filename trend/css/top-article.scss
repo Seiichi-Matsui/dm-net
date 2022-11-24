@@ -278,19 +278,12 @@
             li {
                 display: flex;
                 flex-direction: column;
-                height: 250px;
 
 
                 h2 {
                     font-size: 14px;
                     font-weight: bold;
-                    margin: 10px 0;
-                }
-
-                .description__button__pc {
-                    width: 60%;
-                    margin: auto auto 0;
-                    transition-duration: .2s;
+                    margin: 20px 0 0;
                 }
             }
         }
@@ -302,6 +295,7 @@
         font-weight: bold;
         text-align: right;
         color: #35516B;
+        margin-right: 2.5%;
     }
 }
 
@@ -435,39 +429,6 @@
     display: flex;
     justify-content: space-between;
 
-    .summary__lead,
-    .lead__lead,
-    .detail__lead {
-        width: 29.2%;
-        padding: 20px;
-        border: 1px solid #C1C1C1;
-
-        a {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            
-
-            h2 {
-                font-size: 14px;
-                font-weight: bold;
-                margin: 10px 0;
-                text-align: center;
-            }
-
-            p {
-                color: #294762;
-            }
-
-            .summary__button__pc,
-            .lead__button__pc,
-            .detail__button__pc {
-                width: 60%;
-                margin: auto auto 0;
-                transition-duration: .2s;
-            }
-        }
-    }
     .summary__container,
     .lead__container,
     .detail__container {
@@ -480,7 +441,7 @@
             padding: 10px;
             border: 1px solid #C1C1C1;
             margin-right: 1%;
-            height: 244px;
+            height: 226px;
 
             &:nth-child(3) {
                 margin-right: 0;
@@ -489,6 +450,13 @@
             &:nth-child(4),
             &:nth-child(5) {
                 margin-top: 1%;
+            }
+
+            h2 {
+                font-size: 14px;
+                font-weight: bold;
+                margin: 10px 0;
+                text-align: center;
             }
 
             a {
@@ -500,7 +468,7 @@
                     height: 60px;
                     display: flex;
                     flex-direction: column;
-                    margin-top: 5px;
+                    margin-top: 10px;
                     text-align: center;
 
 
@@ -513,10 +481,6 @@
         }
     }
 
-    .detail__container li {
-
-        height: 268px;
-    }
 
 }
 
