@@ -397,6 +397,7 @@
   font-size: 14px;
   font-weight: bold;
   margin: 10px 0;
+  text-align: center;
 }
 .summary__wrapper .summary__lead a p,
 .summary__wrapper .lead__lead a p,
@@ -466,6 +467,7 @@
   padding: 10px;
   border: 1px solid #C1C1C1;
   margin-right: 1%;
+  height: 244px;
 }
 .summary__wrapper .summary__container li:nth-child(3),
 .summary__wrapper .lead__container li:nth-child(3),
@@ -513,6 +515,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 5px;
+  text-align: center;
 }
 .summary__wrapper .summary__container li a p span,
 .summary__wrapper .lead__container li a p span,
@@ -524,6 +527,11 @@
 .detail__wrapper .lead__container li a p span,
 .detail__wrapper .detail__container li a p span {
   font-size: 11px;
+}
+.summary__wrapper .detail__container li,
+.lead__wrapper .detail__container li,
+.detail__wrapper .detail__container li {
+  height: 268px;
 }
 
 .contents__sp {
@@ -548,8 +556,8 @@
 .lead__lead__sp,
 .detail__lead__sp {
   display: flex;
-  width: 80%;
-  padding: 5%;
+  width: 85%;
+  padding: 2.5%;
   margin: 5% 5% 0;
   justify-content: space-between;
   border: 1px solid #C1C1C1;
@@ -575,18 +583,22 @@
 .detail__lead__sp .lead__lead__text__sp,
 .detail__lead__sp .detail__lead__text__sp {
   width: 45%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
-.summary__lead__sp .summary__lead__text__sp > p,
-.summary__lead__sp .lead__lead__text__sp > p,
-.summary__lead__sp .detail__lead__text__sp > p,
-.lead__lead__sp .summary__lead__text__sp > p,
-.lead__lead__sp .lead__lead__text__sp > p,
-.lead__lead__sp .detail__lead__text__sp > p,
-.detail__lead__sp .summary__lead__text__sp > p,
-.detail__lead__sp .lead__lead__text__sp > p,
-.detail__lead__sp .detail__lead__text__sp > p {
+.summary__lead__sp .summary__lead__text__sp > h2,
+.summary__lead__sp .lead__lead__text__sp > h2,
+.summary__lead__sp .detail__lead__text__sp > h2,
+.lead__lead__sp .summary__lead__text__sp > h2,
+.lead__lead__sp .lead__lead__text__sp > h2,
+.lead__lead__sp .detail__lead__text__sp > h2,
+.detail__lead__sp .summary__lead__text__sp > h2,
+.detail__lead__sp .lead__lead__text__sp > h2,
+.detail__lead__sp .detail__lead__text__sp > h2 {
   font-size: calc(4.1vw - 2px);
   color: #294762;
+  font-weight: bold;
 }
 
 .summary__container__sp,
